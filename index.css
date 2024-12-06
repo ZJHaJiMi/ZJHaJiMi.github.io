@@ -1,0 +1,105 @@
+* {
+  font-family: Mi;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 568px) {
+  .index-title {
+    letter-spacing: 0.02em;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a:hover {
+  background-color: aquamarine;
+  font-size: 1.2vw;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+
+/* 顶部介绍 */
+.TopIntroduce {
+  height: 88vh;
+  background: linear-gradient(to right, pink, blue);
+  /* background-image: url(http://www.yingyu5658.cn/usr/uploads/2024/12/1280508906.png); */
+  background-size: auto 20%;
+
+}
+
+/* 顶部文字 */
+.topText {
+  color: rgb(103, 1, 112);
+
+  margin-left: 10vw;
+  padding-top: 4vh;
+  font-size: 270%;
+}
+
+/* 介绍 */
+.introduce {
+  background-color: 255, 255, 0;
+  text-align: center;
+  font-family: NSimSun;
+  font-size: 120%;
+}
+
+/* 动画 */
+.button {
+  border-radius: 25px;
+  width: 20%;
+  height: 10%;
+  margin-right: 20vw;
+  margin: auto;
+  text-align: center;
+  background-color: pink;
+  transition: width 0.8s;
+}
+
+.button:hover {
+  width: 30vw;
+}
+
+/* “加入我们”二维码尺寸 */
+.joinUs {
+
+  height: 14vh;
+}
+
+/* 主要成员 */
+.mainMember {
+  border-radius: 25px;
+  width: 65vw;
+  height: 310vh;
+  margin-right: 20vw;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(207, 255, 192);
+  transition: width 0.8s;
+}
+
+
+.memberImgSize {
+  width: 16vw;
+}
+
+.mulu {
+  font-size: 25px;
+}
+
+/* seo暴力标签 */
+.seo {
+  text-align: end;
+  font-weight: 100;
+  font-size: medium;
+}
