@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>测试结果</title>
+    <link rel="stylesheet" href="../css/result.css" />
+    <style>
+      /* 专业级增强样式 */
+      body {
+        background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #d84315;
+        text-shadow: 1px 1px 2px rgba(216, 67, 21, 0.1);
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        position: relative;
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 3px;
+        background: #ff7043;
+      }
+
+      #testResult {
+        box-shadow: 0 12px 40px rgba(255, 112, 67, 0.15);
+        padding: 40px;
+        margin: 0 auto;
+        max-width: 1200px;
+        border: 3px solid #d84315 !important;
+        background: linear-gradient(145deg, #ffffff 0%, #fff8f2 100%);
+        position: relative;
+      }
+
+      #testResult p {
+        column-count: 2;
+        column-gap: 60px;
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.1em;
+      }
+
+      #testResult strong {
+        color: #d84315;
+        font-weight: 700;
+      }
+
+      /* 干预建议特殊模块 */
+      #testResult p br:nth-last-child(5) {
+        display: block;
+        margin: 2rem 0;
+        content: "";
+      }
+
+      #testResult p::after {
+        content: "▲ 干预建议需结合专业指导实施";
+        display: block;
+        color: #d84315;
+        font-weight: 500;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px dashed #ffab91;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        #testResult p {
+          column-count: 1;
+          font-size: 0.95em;
+        }
+
+        h1 {
+          font-size: 300% !important;
+        }
+
+        #testResult {
+          padding: 25px !important;
+          font-size: 200% !important;
+        }
+
+        #testResult p::after {
+          font-size: 0.8em;
+        }
+      }
+    </style>
+    >
+  </head>
+  <body>
+    <h1>测试结果：<br />中度音游玩家（0 ~ 10分）</h1>
+    <h5>
+      提示：本页面所有文案均由AI生成，不代表任何个人与组织的观点或立场，<strong>仅供娱乐</strong>。
+    </h5>
+    <div id="testResult">
+      <p>
+        核心特征：音游成为日常规划组成部分，行为模式趋于固化。 <br />
+        行为模式：<br />
+        时间分配：日均3~4小时，固定时段练习（如睡前2小时专项训练）；<br />
+        情感投入：建立角色/曲目情感联结（如《Arcaea》角色剧情追踪），AP追求率达60%以上；<br />
+        社会功能：社交圈中音游话题占比超30%，可能因过度讨论引发非玩家群体疏离。<br />
+        心理动机：
+        技能证明：通过PTT（Potential）评级等可视化指标强化自我认同；<br />
+        逃避现实：在高压环境下将音游作为“心理安全区”（占比约27%）。
+        干预建议：<br />
+        行为矫正：采用“替代疗法”，将部分音游时间分配至运动/创作类活动；<br />
+        认知重构：引导理解“AP≠自我价值”，推荐阅读《游戏化思维中的成就陷阱》。<br />
+      </p>
+    </div>
+  </body>
+</html>
