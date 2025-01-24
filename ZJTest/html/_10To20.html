@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>测试结果</title>
+    <link rel="stylesheet" href="../css/result.css" />
+    <style>
+      /* 专业级增强样式 */
+      body {
+        background: linear-gradient(135deg, #fff5f5 0%, #ffeaea 100%);
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #c62828;
+        text-shadow: 1px 1px 2px rgba(198, 40, 40, 0.1);
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        position: relative;
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 3px;
+        background: #ef5350;
+      }
+
+      #testResult {
+        box-shadow: 0 12px 40px rgba(239, 83, 80, 0.15);
+        padding: 40px;
+        margin: 0 auto;
+        max-width: 1200px;
+        border: 3px solid #c62828 !important;
+        background: linear-gradient(145deg, #ffffff 0%, #fffafa 100%);
+        position: relative;
+      }
+
+      #testResult p {
+        column-count: 2;
+        column-gap: 60px;
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.1em;
+      }
+
+      #testResult strong {
+        color: #c62828;
+        font-weight: 700;
+      }
+
+      /* 危机干预特殊模块 */
+      #testResult p br:nth-of-type(13) {
+        display: block;
+        margin: 2rem 0;
+        content: "";
+      }
+
+      #testResult p::after {
+        content: "⚠ 本报告包含专业干预建议，请理性参考";
+        display: block;
+        color: #c62828;
+        font-weight: 500;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px dashed #ef9a9a;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        #testResult p {
+          column-count: 1;
+          font-size: 0.95em;
+        }
+
+        h1 {
+          font-size: 300% !important;
+        }
+
+        #testResult {
+          padding: 25px !important;
+          font-size: 200% !important;
+        }
+
+        #testResult p::after {
+          font-size: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>测试结果：<br />重度音游玩家（10 ~ 20分）</h1>
+    <h5>
+      提示：本页面所有文案均由AI生成，不代表任何个人与组织的观点或立场，<strong>仅供娱乐</strong>。
+    </h5>
+    <div id="testResult">
+      <p>
+        核心特征：音游主导生活优先级，伴随生理/心理代偿行为。 <br />
+        行为模式：<br />
+        时间分配：日均≥6小时，出现“熬夜打歌”“餐时单手操作”等跨场景行为；<br />
+        情感投入：对冷门曲目/高难度谱面（如《Phigros》IN15级）产生执念，失败后易引发焦虑；<br />
+        社会功能：现实社交频次下降50%以上，部分案例出现“幻触”（如听到音乐时手指无意识抽动）。<br />
+        心理动机：<br />
+        支配需求：通过目押、多指手法等技术突破获得控制感，符合“内在支配感”理论；<br />
+        身份建构：以音游水平为核心社交资本，排斥非硬核玩家群体。 <br />
+        危机干预：<br />
+        生理层面：定期进行腕部/颈椎检查，预防腱鞘炎及脊柱侧弯；<br />
+        心理层面：<br />
+        采用“渐进脱敏法”，逐步减少每日挑战次数；<br />
+        参与《Malody》谱面创作，将沉迷转化为创造性输出16。<br />
+      </p>
+    </div>
+  </body>
+</html>

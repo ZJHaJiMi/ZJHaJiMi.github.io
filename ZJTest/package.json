@@ -1,0 +1,11 @@
+{
+  "name": "zjtest",
+  "version": "1.0.0",
+  "description": "音游痴迷程度测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yingyu5658",
+  "license": "ISC"
+}
