@@ -85,21 +85,19 @@ function changeTheTopics(functionNumber) {
 }
 
 // 根据得分对页面进行跳转
+// 根据得分对页面进行跳转（核心修复部分）
 function settlement(level) {
-  // 范围在-20 ~ -10
   if (level <= -10) {
+    // -∞ ~ -10 → m20ToM10
     window.location.href = '../html/m20ToM10.html';
-  }
-  // -10 ~ 0
-  if (level <= 0 && level >= -10) {
+  } else if (level <= 0) {
+    // -9 ~ 0 → m10To0
     window.location.href = '../html/m10To0.html';
-  }
-  // 0 ~ 10
-  if (level <= 10 && level >= 0) {
+  } else if (level < 10) {
+    // 1 ~ 9 → _0To10
     window.location.href = '../html/_0To10.html';
-  }
-  // 10 ~ 20
-  if (level <= 20 && level >= 10) {
+  } else {
+    // 10 ~ +∞ → _10To20
     window.location.href = '../html/_10To20.html';
   }
 }
